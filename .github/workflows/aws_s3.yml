@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::046955552049:role/team_lucky_oidc_s3_bucket
           role-session-name: rolesession
